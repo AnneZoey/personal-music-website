@@ -76,6 +76,9 @@
   color: #BF4F51;
   background-color: white;
   padding-left: 13px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 3px;
 }
 
 #anhduy {
