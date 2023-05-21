@@ -45,7 +45,7 @@
   width: 0;
   height: 3px;
   background-color: #ffffff;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.15s ease-in-out;
 }
 
 .nav-content:hover::before {
@@ -114,10 +114,8 @@
   display: flex;
   justify-content: space-between;
 
-  width: 1123px;
-  height: 394px;
-
   margin-top: 20px;
+  gap: 3em;
 }
 
 .latest-upload, .latest-tweet {
@@ -163,6 +161,7 @@
 /*YouTube Embed Settings*/
 .embed {
   margin-top: 12px;
+  
 }
 
 .embed iframe {
