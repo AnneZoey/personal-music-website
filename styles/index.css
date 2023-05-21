@@ -28,7 +28,32 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+  letter-spacing: 0.575em;
+}
+
+.nav-content {
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.15s;
+}
+
+.nav-content::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-content:hover::before {
+  width: 97%;
+}
+
+.nav-content:hover {
+  transform: scale(1.05);
 }
 
 .title {
@@ -47,10 +72,17 @@
   margin-top: 50px;
 }
 
+.title-musician {
+  color: #BF4F51;
+  background-color: white;
+  padding-left: 13px;
+}
+
 #anhduy {
   width: 566px;
   height: 89px;
-  margin: 21px 21px;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
 
 .social-icons {
@@ -62,6 +94,19 @@
   margin-right: 12px;
 }
 
+/*Icon hover effects*/
+.icon {
+  transition: transform 0.15s linear;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Adjust the scale value as per your preference */
+}
+
+.icon:active {
+  opacity: 0.7;
+}
+
 .updates {
   display: flex;
   justify-content: space-between;
@@ -69,7 +114,7 @@
   width: 1123px;
   height: 394px;
 
-  margin-top: 33px;
+  margin-top: 20px;
 }
 
 .latest-upload, .latest-tweet {
@@ -112,6 +157,7 @@
   flex: 1fr;
 }
 
+/*YouTube Embed Settings*/
 .embed {
   margin-top: 12px;
 }
