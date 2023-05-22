@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-=======
 .landing-content {
   /*background-color: #BF4F51;*/
-  height: 932px;
+  height: auto;
   width: 100vw;
   position: relative;
   
@@ -10,19 +8,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .navigation-bar {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 0px 0px 50px 0px;
 }
 
 .navigation-bar img {
   width: 56px;
-  height: 60px;
-  margin-left: 54px;
-  margin-right: 54px;
+  padding-left: 54px;
+  padding-right: 54px;
 }
 
 .navigation-bar a {
@@ -70,8 +76,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  margin-top: 50px;
 }
 
 .title-musician {
@@ -83,11 +87,14 @@
   border-radius: 3px;
 }
 
+.image-container {
+  width: 70%;
+}
+
 #anhduy {
-  width: 566px;
-  height: 89px;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 
 .social-icons {
@@ -95,8 +102,8 @@
 }
 
 .social-icons a {
-  margin-left: 12px;
-  margin-right: 12px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 /*Icon hover effects*/
@@ -114,18 +121,15 @@
 
 .updates {
   display: flex;
-  justify-content: space-between;
-
-  width: 1123px;
-  height: 394px;
-
-  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding-top: 20px;
 }
 
 .latest-upload, .latest-tweet {
   background-color: white;
-  width: 511px;
-  height: 370px;
   border-radius: 20px;
   box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.15);
 
@@ -133,11 +137,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding: 20px;
 }
 
 .new-release-header {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
@@ -159,15 +165,89 @@
 
   margin-left: 24px;
   
-  flex: 1fr;
+  flex: 1;
 }
 
 /*YouTube Embed Settings*/
-.embed {
-  margin-top: 12px;
+.video-container {
+  padding-top: 12px;
 }
 
-.embed iframe {
+.video {
   border-radius: 10px;
 }
->>>>>>> parent of 6a5a0f9 (started working on discography)
+
+@media screen and (max-width: 768px){
+  .updates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 20px;
+  }
+
+  .latest-upload, .latest-tweet {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.15);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 20px;
+  }
+
+  .video-container {
+    display: none;
+  }
+
+  .new-release-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .new-release-text {
+    color: #1E1E1E;
+    font-weight: 900;
+    font-size: 0.75em;
+    letter-spacing: 0.535em;
+  
+    margin-left: 24px;
+    
+    flex: 1;
+  }
+
+  .navigation-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 0px 0px 20px 0px;
+  }
+  
+  .navigation-bar img {
+    width: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .navigation-bar a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.60em;
+    letter-spacing: 0.575em;
+  }
+  
+  .nav-content {
+    position: relative;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+}
