@@ -1,0 +1,172 @@
+<<<<<<< HEAD
+=======
+.landing-content {
+  /*background-color: #BF4F51;*/
+  height: 932px;
+  width: 100vw;
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar img {
+  width: 56px;
+  height: 60px;
+  margin-left: 54px;
+  margin-right: 54px;
+}
+
+.navigation-bar a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.575em;
+}
+
+.nav-content {
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.15s;
+}
+
+.nav-content::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: width 0.15s ease-in-out;
+}
+
+.nav-content:hover::before {
+  width: 97%;
+}
+
+.nav-content:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.575em;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.title-musician {
+  color: #BF4F51;
+  background-color: white;
+  padding-left: 13px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 3px;
+}
+
+#anhduy {
+  width: 566px;
+  height: 89px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+/*Icon hover effects*/
+.icon {
+  transition: transform 0.15s linear;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Adjust the scale value as per your preference */
+}
+
+.icon:active {
+  opacity: 0.7;
+}
+
+.updates {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  gap: 3em;
+}
+
+.latest-upload, .latest-tweet {
+  background-color: white;
+  width: 511px;
+  height: 370px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-release-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 67px;
+  height: 67px;
+  border-radius: 60px;
+
+  background-image: url("../img/profile-picture.png");
+  background-position: -10px -3px;
+  background-size: 120px;
+}
+
+.new-release-text {
+  color: #1E1E1E;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 0.535em;
+
+  margin-left: 24px;
+  
+  flex: 1fr;
+}
+
+/*YouTube Embed Settings*/
+.embed {
+  margin-top: 12px;
+  
+}
+
+.embed iframe {
+  border-radius: 10px;
+}
+>>>>>>> parent of 6a5a0f9 (started working on discography)
