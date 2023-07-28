@@ -10,6 +10,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-size: cover;
 }
 
 p {
